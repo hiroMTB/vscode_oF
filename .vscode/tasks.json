@@ -1,0 +1,38 @@
+{
+    "version": "0.1.0",
+    //"command": "sh",
+    "isShellCommand": true,
+    "tasks": [
+        {
+            "taskName": "build debug",
+            "isBuildCommand": true,
+            "showOutput": "always",
+            "command": "make",
+            "args": ["Debug"]
+        },
+        {
+            "taskName": "build Release",
+            "showOutput": "always",
+            "command": "make",
+            "args": ["Release"]
+        },
+        {
+            "taskName": "clean Debug",
+            "showOutput": "always",
+            "command": "make",
+            "args": ["CleanDebug"]
+        },
+        {
+            "taskName": "clean Release",
+            "showOutput": "always",
+            "command": "make",
+            "args": ["CleanRelease"]
+        },
+        {
+            "taskName": "clean All",
+            "showOutput": "always",
+            "command": "make",
+            "args": ["clean"]
+        }
+    ]
+}
