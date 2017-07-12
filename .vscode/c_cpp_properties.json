@@ -7,8 +7,8 @@
                 "/usr/local/include",
                 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/",
                 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/4.2.1",
-                "~/Desktop/of_v0.9.8_osx_release/libs",
-                "~/Desktop/of_v0.9.8_osx_release/addons"
+                "${workspaceRoot}/../../../libs",
+                "${workspaceRoot}/../../../addons"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
@@ -18,8 +18,8 @@
                     "/usr/local/include",
                     "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/",
                     "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/4.2.1",
-                    "~/Desktop/of_v0.9.8_osx_release/libs",
-                    "~/Desktop/of_v0.9.8_osx_release/addons"
+                    "${workspaceRoot}/../../../libs",
+                    "${workspaceRoot}/../../../addons"
                 ]
             },
             "intelliSenseMode": "clang-x64"
