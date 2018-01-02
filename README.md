@@ -1,3 +1,5 @@
+![Screenshot](ss.png)
+
 # vscode_oF
 openFrameworks empty example for visual studio code
 Curretly only tested on OSX.
