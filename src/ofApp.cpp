@@ -2,10 +2,15 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    for (int i = 0; i < 10; i++)
-    {
-        
-    }
+
+    // About Auto complete
+    // Curretry vscode intelisense for C++ has limitation.
+    // Try to type m.set and you will see tons of functions and variables includes "set" keyword
+    // 
+    // more info here https://github.com/Microsoft/vscode-cpptools/issues/13
+    // You can use "Peek Definition" feature instead
+    MyClass m;
+    // m.set
 }
 
 //--------------------------------------------------------------

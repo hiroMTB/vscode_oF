@@ -2,6 +2,17 @@
 
 #include "ofMain.h"
 
+class MyClass{
+
+public:
+	void set(int _i, float _f){
+		i = _i; f = _f;
+	};
+
+	int i;
+	float f;
+};
+
 class ofApp : public ofBaseApp{
 	public:
 		void setup();

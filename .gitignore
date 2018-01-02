@@ -53,3 +53,8 @@ DerivedData
 *.xcscmblueprint
 
 obj/**
+
+# vs code brower database
+*.db
+*.db-shm
+*.db-wal
