@@ -52,7 +52,7 @@ DerivedData
 
 *.xcscmblueprint
 
-obj/**
+**/obj/**
 
 # vs code brower database
 *.db
