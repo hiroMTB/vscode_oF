@@ -1,5 +1,8 @@
 ![Screenshot](ss.png)
 
+[![Build Status](https://travis-ci.org/hiroMTB/vscode_oF.svg?branch=dev)](https://travis-ci.org/hiroMTB/vscode_oF)
+[![Build status](https://ci.appveyor.com/api/projects/status/gp66lfcygw2mtnld/branch/dev?svg=true)](https://ci.appveyor.com/project/hiroMTB/vscode-of/branch/dev)
+
 # vscode_oF
 openFrameworks empty example for visual studio code
 Curretly only tested on OSX.
