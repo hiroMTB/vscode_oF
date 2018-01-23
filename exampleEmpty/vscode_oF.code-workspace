@@ -4,10 +4,10 @@
 			"path": "."
 		},
 		{
-			"path": "${workspaceRoot}/../../../../libs/openFrameworks"
+			"path": "${workspaceRoot}/../../../../../libs/openFrameworks"
 		},
 		{
-			"path": "${workspaceRoot}/../../../../addons"
+			"path": "${workspaceRoot}/../../../../../addons"
 		}
 	],
 	"settings": {}
