@@ -8,6 +8,14 @@ openFrameworks empty example for visual studio code.
 Curretly only tested on OSX and Ubuntu(by @anselanza).
 Now we can browse source code under /libs/openFrameworks and /addons/* folders.
 
+## Folder Structure
+```
+/of
+  /app
+    /vscode_oF
+      /emptyExample
+```
+
 ## Known issue
 + "make clean" does not work (bug of openFrameworks Make system)
 + MacOSX.sdk path hard coded
