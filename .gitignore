@@ -58,3 +58,6 @@ DerivedData
 *.db
 *.db-shm
 *.db-wal
+
+# Linux build
+bin/
