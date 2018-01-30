@@ -11,9 +11,9 @@ Now we can browse source code under /libs/openFrameworks and /addons/* folders.
 ## Folder Structure
 ```
 /of
-  /app
-    /vscode_oF
-      /emptyExample
+  /apps
+    /myapps
+      /vscode_oF
 ```
 
 ## Known issue
