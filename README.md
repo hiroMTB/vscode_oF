@@ -11,10 +11,13 @@ Now we can browse source code under /libs/openFrameworks and /addons/* folders.
 ## Folder Structure
 ```
 /of
-  /app
+  /apps
     /vscode_oF
-      /emptyExample
+      /exampleEmpty
 ```
+
+## oF version
+0.10.0
 
 ## Known issue
 + "make clean" does not work (bug of openFrameworks Make system)
