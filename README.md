@@ -4,8 +4,24 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/gp66lfcygw2mtnld/branch/master?svg=true)](https://ci.appveyor.com/project/hiroMTB/vscode-of/branch/master)
 
 # vscode_oF
-openFrameworks empty example for visual studio code.
-Curretly only tested on OSX and Ubuntu(by @anselanza).
+openFrameworks empty example for Microsoft Visual Studio Code IDE(vscode).
+This is not addon. (folder structure is same with addoon)
+
+# How to compile example project
+1. download and install vscode.
+2. download or clone this repositry to your /oF/apps folder
+2. open project file with vscode(vscode_oF.code-workspace).
+3. Command + B and select "buid debug" for compiling oF and exampleProject. (excute make command)
+
+# How to start your own project
+1. Copy and paste /exampleEmpty folder and start your own project.
+2. Edit addons.make file if you want to add addons
+3. You might need to edit setting files inside of ./vscode
+
+It provides quick auto complete feature.
+Since vscode does not provide built-in debugger, debugging feature is depends on platform.
+
+Curretly tested on OSX and Ubuntu(by @anselanza).
 Now we can browse source code under /libs/openFrameworks and /addons/* folders.
 
 ## Folder Structure
@@ -21,7 +37,7 @@ Now we can browse source code under /libs/openFrameworks and /addons/* folders.
 
 ## Known issue
 + "make clean" does not work (bug of openFrameworks Make system)
-+ MacOSX.sdk path hard coded
++ MacOSX.sdk path is hard coded
 + "#include error detected" for header files which is not actualy included
     for example GL/gl.h is for Linux wihch is not included on osx. This shold be fixed with limitSymbolsToIncludedHeaders property in c_cpp_properties.json
     But still vs code claims it is missing.
