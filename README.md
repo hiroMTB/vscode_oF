@@ -13,6 +13,9 @@ This is not addon. (folder structure is same with addoon)
 2. open project file with vscode(vscode_oF.code-workspace).
 3. Command + B and select "buid debug" for compiling oF and exampleProject. (excute make command)
 
+## for linux user
+since update linux kernel, original `c_cpp_properties.json` is not working for me. i fixed part of lines of `"configurations" > "name":"linus" - "includePath"`. I'm not sure it's work for other linux users but it works well for me. for example, my linux c++ version is `7.3.1`, not `5`. so i edited `/usr/include/c++/5` to `/usr/include/c++/7.3.1`. there are other lines which is not matched with mine. check if that location is exists with yours and fix it"
+
 # How to start your own project
 1. Copy and paste /exampleEmpty folder and start your own project.
 2. Edit addons.make file if you want to add addons
