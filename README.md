@@ -11,7 +11,8 @@ This is not addon. (folder structure is same with addoon)
 1. download and install vscode.
 2. download or clone this repositry to your /oF/apps folder
 2. open project file with vscode(vscode_oF.code-workspace).
-3. Command + B and select "buid debug" for compiling oF and exampleProject. (excute make command)
+3. default `Ctrl+Shift+B` shortcut act as `build test(release)`(I edited original tasks.json, which is "build debug").
+4. also, I add task for "make RunRelease". just type "Ctrl+P" and "test.
 
 ## for linux user
 since update linux kernel, original `c_cpp_properties.json` is not working for me. i fixed part of lines of `"configurations" > "name":"linus" - "includePath"`. I'm not sure it's work for other linux users but it works well for me. for example, my linux c++ version is `7.3.1`, not `5`. so i edited `/usr/include/c++/5` to `/usr/include/c++/7.3.1`. there are other lines which is not matched with mine. check if that location is exists with yours and fix it"
@@ -24,7 +25,7 @@ since update linux kernel, original `c_cpp_properties.json` is not working for m
 It provides quick auto complete feature.
 Since vscode does not provide built-in debugger, debugging feature is depends on platform.
 
-Curretly tested on OSX and Ubuntu(by @anselanza).
+Curretly tested on OSX and Ubuntu(by @anselanza), and arch Linux(manjaro distribution, by @icq4ever).
 Now we can browse source code under /libs/openFrameworks and /addons/* folders.
 
 ## Folder Structure
@@ -36,7 +37,8 @@ Now we can browse source code under /libs/openFrameworks and /addons/* folders.
 ```
 
 ## oF version
-0.10.0
+- 0.9.8 (works confirm)
+- 0.10.0
 
 ## Known issue
 + "make clean" does not work (bug of openFrameworks Make system)

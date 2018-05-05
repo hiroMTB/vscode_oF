@@ -68,7 +68,6 @@
                 "/usr/lib/gcc/x86_64-linux-gnu/7.3.1/include-fixed",
                 "/usr/lib/glib-2.0/include",
                 "/usr/lib/gstreamer-1.0/include",
-                "/usr/local/include",
                 "${workspaceRoot}/../../../libs/openFrameworks",
                 "${workspaceRoot}/../../../libs/openFrameworks/3d",
                 "${workspaceRoot}/../../../libs/openFrameworks/app",
@@ -103,10 +102,7 @@
                 "/usr/include/gstreamer-1.0",
                 "/usr/include/glib-2.0",
                 "${workspaceRoot}",
-                "${workspaceRoot}/utils",
-                "${workspaceRoot}/3d",
-                "${workspaceRoot}/math",
-                "${workspaceRoot}/types"
+                "${workspaceFolder}"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,

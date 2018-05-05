@@ -6,6 +6,22 @@
     "tasks": [
         {
             "type": "shell",
+            "label": "Run Release",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "command": "make",
+            "args": [
+                "RunRelease"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
             "label": "build debug",
             "presentation": {
                 "reveal": "always",
@@ -14,11 +30,7 @@
             "command": "make",
             "args": [
                 "Debug"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            ]
         },
         {
             "type": "shell",
@@ -30,7 +42,11 @@
             "command": "make",
             "args": [
                 "Release"
-            ]
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "type": "shell",
