@@ -36,9 +36,22 @@ Now we can browse source code under /libs/openFrameworks and /addons/* folders.
       /exampleEmpty
 ```
 
+## alias helper
+- set alias (`~/.bashrc` or `~/.zshrc`)
+- restart terminal or run `source ~/.zshrc` 
+
+```
+# generate vscode_OF project with projectName as parameter
+alias initOF='f(){ cp -r _OF_DIRECTORY_/apps/vscode_oF/exampleEmpty "$@"; code "$@";}; f'
+
+# set vscode project in oF project directory 
+alias setOF='cp -r _OF_DIRECTORY_/apps/vscode_oF/exampleEmpty/.vscode ./ && cp ~/oF/apps/vscode_oF/exampleEmpty/vscode_oF.code-workspace ./'
+```
+
 ## oF version
 - 0.9.8 (works confirm)
-- 0.10.0
+- 0.10.0 (works confirm on arch linux)
+
 
 ## Known issue
 + "make clean" does not work (bug of openFrameworks Make system)
