@@ -5,6 +5,7 @@
             "includePath": [
                 "/usr/include",
                 "/usr/local/include",
+                "/usr/local/include/cairo",
                 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/",
                 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/4.2.1",
                 "${workspaceRoot}/../../../libs/openFrameworks",
@@ -34,9 +35,16 @@
                 "${workspaceRoot}/../../../libs/tess2/include",
                 "${workspaceRoot}/../../../libs/uriparser/include",
                 "${workspaceRoot}/../../../libs/utf8/include",
+                "${workspaceRoot}/../../../addons/ofxGui/src",
+                "${workspaceRoot}/../../../addons/ofxCv/src",
+                "${workspaceRoot}/../../../addons/ofxCv/libs/ofxCv/include",
+                "${workspaceRoot}/../../../addons/ofxCv/libs/CLD/include",
+                "${workspaceRoot}/../../../addons/ofxCv/libs/CLD/include/CLD",
                 "${workspaceRoot}/../../../addons/ofxOsc/src",
                 "${workspaceRoot}/../../../addons/ofxOsc/libs/oscpack/src/osc",
-                "${workspaceRoot}/../../../addons/ofxOsc/libs/oscpack/src/ip"
+                "${workspaceRoot}/../../../addons/ofxOsc/libs/oscpack/src/ip",
+                "/System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks",
+                "/System/Library/Frameworks/ApplicationServices.framework/Versions/Current/Frameworks"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
@@ -44,10 +52,12 @@
                 "path": [
                     "/usr/include",
                     "/usr/local/include",
+                    "/usr/local/include/cairo",
                     "/System/Library/Frameworks",
                     "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/",
                     "${workspaceRoot}/../../../libs",
                     "${workspaceRoot}/../../../addons",
+                    "${workspaceRoot}/../../../addons/ofxOsc/libs",
                     "${workspaceRoot}/../../../libs/openFrameworks"
                 ]
             },
