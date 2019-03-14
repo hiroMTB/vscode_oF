@@ -109,7 +109,12 @@
                 "databaseFilename": "",
                 "path": [
                     "/usr/include",
-                    "/usr/local/include"
+                    "/usr/local/include",
+                    "/usr/lib",
+                    "${workspaceRoot}/../../../libs/openFrameworks",
+                    "${workspaceRoot}",
+                    "${workspaceFolder}",
+                    "${workspaceRoot}/../../../addons"
                 ]
             },
             "intelliSenseMode": "clang-x64",
@@ -132,5 +137,5 @@
             "intelliSenseMode": "msvc-x64"
         }
     ],
-    "version": 3
+    "version": 4
 }
