@@ -19,7 +19,8 @@
                         "text": "-enable-pretty-printing",
                         "ignoreFailures": true
                     }
-                ]
+                ],
+                "program": "${workspaceRoot}/bin/vscode_oF_debug"
             },
             "osx": {
                 "MIMode": "lldb"
