@@ -6,6 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/bin/vscode_oF_debug.app/Contents/MacOS/vscode_oF_debug",
+            
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
@@ -13,6 +14,7 @@
             "externalConsole": false,
             "linux": {
                 "MIMode": "gdb",
+                "miDebuggerPath":"/usr/bin/gdb",
                 "setupCommands": [
                     {
                         "description": "Enable pretty-printing for gdb",
@@ -20,7 +22,7 @@
                         "ignoreFailures": true
                     }
                 ],
-                "program": "${workspaceRoot}/bin/vscode_oF_debug"
+                "program": "${workspaceRoot}/bin/${workspaceFolderBasename}_debug"
             },
             "osx": {
                 "MIMode": "lldb"
