@@ -6,67 +6,128 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "build debug",
+            "label": "Build RELEASE",
             "presentation": {
                 "reveal": "always",
-                "panel": "new"
+                "panel": "shared"
             },
-            "command": "make",
-            "args": [
-                "Debug"
-            ],
+            "command": "make -j -s 2>&1 && make RunRelease",
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                  "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                  "file": 1,
+                  "line": 2,
+                  "column": 3,
+                  "severity": 4,
+                  "message": 5
+                }
+              }
         },
         {
             "type": "shell",
-            "label": "build Release",
+            "label": "Build DEBUG",
             "presentation": {
                 "reveal": "always",
-                "panel": "new"
+                "panel": "shared"
             },
-            "command": "make",
-            "args": [
-                "Release"
-            ]
+            "command": "make Debug -j -s 2>&1 || exit 1",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                  "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                  "file": 1,
+                  "line": 2,
+                  "column": 3,
+                  "severity": 4,
+                  "message": 5
+                }
+              }
         },
         {
             "type": "shell",
-            "label": "clean Debug",
+            "label": "Clean DEBUG",
             "presentation": {
                 "reveal": "always",
-                "panel": "new"
+                "panel": "shared"
             },
-            "command": "make",
-            "args": [
-                "CleanDebug"
-            ]
+            "command": "make CleanDebug",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                  "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                  "file": 1,
+                  "line": 2,
+                  "column": 3,
+                  "severity": 4,
+                  "message": 5
+                }
+              }
         },
         {
             "type": "shell",
-            "label": "clean Release",
+            "label": "Clean RELEASE",
             "presentation": {
                 "reveal": "always",
-                "panel": "new"
+                "panel": "shared"
             },
-            "command": "make",
-            "args": [
-                "CleanRelease"
-            ]
+            "command": "make CleanRelease",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                  "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                  "file": 1,
+                  "line": 2,
+                  "column": 3,
+                  "severity": 4,
+                  "message": 5
+                }
+              }
         },
         {
             "type": "shell",
-            "label": "clean All",
+            "label": "Clean ALL",
             "presentation": {
                 "reveal": "always",
-                "panel": "new"
+                "panel": "shared"
             },
-            "command": "make",
-            "args": [
-                "clean"
-            ]
-        }
+            "command": "make clean",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                  "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                  "file": 1,
+                  "line": 2,
+                  "column": 3,
+                  "severity": 4,
+                  "message": 5
+                }
+              }
+         }
     ]
 }

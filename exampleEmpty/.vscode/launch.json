@@ -5,7 +5,6 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/bin/vscode_oF_debug.app/Contents/MacOS/vscode_oF_debug",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
@@ -20,20 +19,23 @@
                         "ignoreFailures": true
                     }
                 ],
-                "program": "${workspaceRoot}/bin/vscode_oF_debug"
+                "program": "${workspaceRoot}/bin/${workspaceFolderBasename}_debug"
             },
             "osx": {
-                "MIMode": "lldb"
+                "MIMode": "lldb",
+                "program": "${workspaceRoot}/bin/${workspaceFolderBasename}_debug.app/Contents/MacOS/${workspaceFolderBasename}_debug"
             },
             "windows": {
                 "MIMode": "gdb",
+                "miDebuggerPath": "gdb.exe",
                 "setupCommands": [
                     {
                         "description": "Enable pretty-printing for gdb",
                         "text": "-enable-pretty-printing",
                         "ignoreFailures": true
                     }
-                ]
+                ],
+                "program": "${workspaceRoot}/bin/${workspaceFolderBasename}_debug"
             }
         },
         {
