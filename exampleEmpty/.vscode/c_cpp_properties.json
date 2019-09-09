@@ -142,7 +142,7 @@
                 "${workspaceRoot}/../../../libs/openFrameworks/utils",
                 "${workspaceRoot}/../../../libs/openFrameworks/video",
                 "${workspaceRoot}/../../../libs/boost/include",
-                "${workspaceRoot}/../../../libs/cairo/include",
+                "${workspaceRoot}/../../../libs/cairo/include/cairo",
                 "${workspaceRoot}/../../../libs/curl/include",
                 "${workspaceRoot}/../../../libs/fmodex/include",
                 "${workspaceRoot}/../../../libs/FreeImage/include",
@@ -155,7 +155,8 @@
                 "${workspaceRoot}/../../../libs/rtAudio/include",
                 "${workspaceRoot}/../../../libs/tess2/include",
                 "${workspaceRoot}/../../../libs/uriparser/include",
-                "${workspaceRoot}/../../../libs/utf8/include"
+                "${workspaceRoot}/../../../libs/utf8/include",
+                "${workspaceRoot}/../../../libs/videoInput/include"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
