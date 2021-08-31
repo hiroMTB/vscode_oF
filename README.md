@@ -1,3 +1,15 @@
+# NOTICE
+Hello, thanks for visiting this repo.
+Few yeaers ago, I sent a PR which generates vscode project from oF's Project Generator.
+It was quickly merged and you can use vscode with oF without this repo.
+So I no longer update this repo.
+
+Please check oF main repo and also this thread in the forum.
+https://forum.openframeworks.cc/t/vscode-visual-studio-code-of/28504
+
+I will soon archive this repo to avoid confusion.
+But let me know if it is still useful for some reason.
+
 ![Screenshot](ss.png)
 
 [![Build Status](https://travis-ci.org/hiroMTB/vscode_oF.svg?branch=master)](https://travis-ci.org/hiroMTB/vscode_oF)
