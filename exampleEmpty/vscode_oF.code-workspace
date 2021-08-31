@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "${workspaceRoot}/../../../../addons"
+		},
+		{
+			"path": "./local_addons"
 		}
 	],
 	"settings": {}
